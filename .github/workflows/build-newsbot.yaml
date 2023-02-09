@@ -39,7 +39,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
     
-    # - name: Build Docker Image
+    - name: Build Docker Image
     #   env:
     #     DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
     #     DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}

@@ -46,6 +46,7 @@ jobs:
 
       run: |
         cd source-code/chapter-7/exercise-2/newsbot-compose
+        docker build -t newsbot:${GITHUB_SHA} .
         # docker login -u ${DOCKER_USERNAME} -p ${DOCKER_PASSWORD}
-        docker build -t ${DOCKER_USERNAME}/newsbot:${GITHUB_SHA} .
+        # docker build -t ${DOCKER_USERNAME}/newsbot:${GITHUB_SHA} .
         # docker push ${DOCKER_USERNAME}/newsbot:${GITHUB_SHA}
